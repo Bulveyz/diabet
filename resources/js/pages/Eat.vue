@@ -8,7 +8,7 @@
           </template>
         </b-form-select>
       </div>
-      <div class="form-group mb-4">
+      <div :class="['form-group', 'mb-4', {'fixed-bottom z-index-1000000 px-3': show}]">
         <b-form-input class="form--pill" v-model="product" placeholder="Product" pill></b-form-input>
         <div v-if="show" class="product-search-menu bg-light rounded mt-2 p-3">
           <div v-if="loading" class="loader position-absolute"></div>
@@ -147,8 +147,10 @@
   .product-search-menu {
     position: fixed;
     top: 0;
-    width: 92%;
+    width: 95%;
     height: 300px;
+    left: 50%;
+    transform: translateX(-50%);
     overflow-y: scroll;
   }
 

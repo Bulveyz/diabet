@@ -58258,7 +58258,7 @@ exports = module.exports = __webpack_require__(6)(false);
 
 
 // module
-exports.push([module.i, "\n.product-search-menu[data-v-cd3af942] {\n  position: fixed;\n  top: 0;\n  width: 92%;\n  height: 300px;\n  overflow-y: scroll;\n}\n.loader[data-v-cd3af942] {\n  top: 50%;\n  border-left-color: #3498DB;\n  border-right-color: #3498DB;\n  left: 45%;\n  -webkit-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n}\n.product-item[data-v-cd3af942]:hover {\n  color: #3498DB;\n}\n.product-count[data-v-cd3af942] {\n  position: fixed;\n  width: 92%;\n  top: 48%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n}\n", ""]);
+exports.push([module.i, "\n.product-search-menu[data-v-cd3af942] {\n  position: fixed;\n  top: 0;\n  width: 95%;\n  height: 300px;\n  left: 50%;\n  -webkit-transform: translateX(-50%);\n          transform: translateX(-50%);\n  overflow-y: scroll;\n}\n.loader[data-v-cd3af942] {\n  top: 50%;\n  border-left-color: #3498DB;\n  border-right-color: #3498DB;\n  left: 45%;\n  -webkit-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n}\n.product-item[data-v-cd3af942]:hover {\n  color: #3498DB;\n}\n.product-count[data-v-cd3af942] {\n  position: fixed;\n  width: 92%;\n  top: 48%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n}\n", ""]);
 
 // exports
 
@@ -58460,7 +58460,13 @@ var render = function() {
           _vm._v(" "),
           _c(
             "div",
-            { staticClass: "form-group mb-4" },
+            {
+              class: [
+                "form-group",
+                "mb-4",
+                { "fixed-bottom z-index-1000000 px-3": _vm.show }
+              ]
+            },
             [
               _c("b-form-input", {
                 staticClass: "form--pill",

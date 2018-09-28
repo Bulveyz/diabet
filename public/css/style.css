@@ -78,3 +78,8 @@ body {
 .text-gray {
     color: #D7D7D7 !important;
 }
+
+.z-index-1000000 {
+    z-index: 1000000 !important;
+    bottom: -8px !important;
+}
