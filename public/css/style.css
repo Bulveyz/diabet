@@ -1,0 +1,80 @@
+body {
+    padding-top: 50px;
+}
+
+.welcome-header,
+.home-header {
+    color: #fff;
+    background: url("../images/NavbarFucsi.svg") no-repeat;
+    background-size: cover;
+    height: 151px;
+}
+
+.welcome-header__subtitle {
+    font-size: 12px;
+    margin-left: 40px;
+}
+
+.loader {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 10px solid #fff;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    animation: rotation 1.8s linear infinite;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+.router-link-exact-active .fa {
+    color: #3498DB !important;
+}
+
+.form-control:focus {
+    border-color: #3498DB;
+}
+
+.text-main {
+    color: #3498DB !important;
+}
+
+.bg-main {
+    background-color: #3498DB !important;
+}
+
+.outline-main {
+    border-color: #3498DB !important;
+    color: #3498DB !important;
+    background-color: transparent;
+}
+
+.outline-main:focus,
+.outline-main:hover {
+    color: #fff !important;
+    border-color: #2c80b8 !important;
+    background-color: #2c80b8 !important;
+}
+
+.btn-main {
+    color: #fff !important;
+    border-color: #3498DB !important;
+    background-color: #3498DB;
+}
+
+.btn-main:focus,
+.btn-main:hover {
+    border-color: #2c80b8 !important;
+    background-color: #2c80b8 !important;
+}
+
+.text-gray {
+    color: #D7D7D7 !important;
+}
